@@ -1,0 +1,17 @@
+version: '2'
+services:
+  base:
+    build: .
+    image: sammascanner/base
+    volumes:
+      - ./:/scanner
+      - ./code/:/code-test
+    environment:
+      - TARGET=samma.io
+      - SAMMA_IO_SCANNER=domain
+      - SAMMA_IO_ID=g23dE222
+      - SAMMA_IO_TAGS=['scanner','prod']
+      - SAMMA_IO_JSON={"extra":"value"}
+      - WRITE_TO_FILE="true"
+
+    command: tail -f /etc/fstab
