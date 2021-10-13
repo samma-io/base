@@ -15,3 +15,4 @@ python /code/parsefile.py
 
 
 echo "All done die"
+echo "died man die" > /out/die
