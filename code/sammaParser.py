@@ -1,7 +1,7 @@
 import os
 import json
 
-WRITE_TO_FILE = os.getenv('WRITE_TO_FILE', 'False')
+WRITE_TO_FILE = os.getenv('WRITE_TO_FILE', 'True')
 PARSER = os.getenv('PARSER', 'base')
 
 
@@ -33,7 +33,7 @@ def logger(json_data):
     '''
     # Samma tags
     json_samma={} 
-    json_samma['scanner'] = os.getenv('SAMMA_IO_SCANNER', 'samma-io-scanner')
+    json_samma['scanner'] = os.getenv('SAMMA_IO_SCANNER', 'base')
     json_samma['id'] = os.getenv('SAMMA_IO_ID', '1234')
     json_samma['tags'] = os.getenv('SAMMA_IO_TAGS', "['a','b']")
     json_samma['json'] = os.getenv('SAMMA_IO_JSON', '{"value":"a"}')
