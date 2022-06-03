@@ -13,7 +13,7 @@ RUN pip3 install dnspython
 # /opt/dnsspider-1.3/dnsspider.py -t 0 -a $TARGET
 
 # webanalyser
-RUN apt-get install python python-dnspython -y
+RUN apt-get install python3 python3-dnspython -y
 #RUN pip install geoip
 RUN wget https://github.com/eldraco/domain_analyzer/archive/refs/heads/master.zip
 RUN unzip master.zip
