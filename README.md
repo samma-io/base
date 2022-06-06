@@ -8,7 +8,7 @@
 ## Samma Security Scanners
 This scanner is part of the Samma Security Scanners
 
-The Samma Security Scanners are all small openspurce scanners. That have ben docerixed and print there result in JSON format.
+ The Samma Security Scanners are all small openspurce scanners. That have ben docerixed and print there result in JSON format.
 The result is then sent to ElasticSerarch for storage and displayed using Kibana ore Grafana.
 
 To see all the scanners please go to [Samma.io](https://samma.io)
